@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wizard AI Pro</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="card">
+    <div class="glass-bg"></div>
+    <div class="content">
+      <div class="header">
+        <div class="icon-container">
+          <img src="icon.png" alt="Icon" id="status-icon">
+        </div>
+        <h1 id="greeting">AI Wizard</h1>
+      </div>
+      <p id="sub-header">Describe tu proyecto para iniciar el protocolo</p>
+
+      <!-- Pantalla de Input -->
+      <div id="input-screen" class="screen">
+        <div class="input-container">
+          <textarea id="prompt-input"
+            placeholder="Ejemplo: Quiero una app tipo Uber para paseadores de perros..."></textarea>
+          <div class="actions-row">
+            <button id="start-btn">Iniciar Protocolo EEP</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pantalla de Carga -->
+      <div id="loading-screen" class="screen hidden">
+        <div class="loader-container">
+          <div class="spinner"></div>
+          <p>Ejecutando protocolo EEP...</p>
+        </div>
+      </div>
+
+      <!-- Pantalla de Información Faltante -->
+      <div id="missing-info-screen" class="screen hidden">
+        <div class="response-area">
+          <h3>Información Requerida</h3>
+          <p class="instruction">Por favor, completa los siguientes detalles para continuar:</p>
+          <div id="missing-form-container">
+            <!-- Los inputs se generarán dinámicamente aquí -->
+          </div>
+        </div>
+        <div class="actions-row">
+          <button id="reply-btn">Procesar Respuestas</button>
+        </div>
+      </div>
+
+      <!-- Pantalla de Resultados (Fases) -->
+      <div id="result-screen" class="screen hidden">
+        <div id="phases-container" class="response-area">
+          <!-- Aquí se inyectarán las fases del JSON -->
+        </div>
+        <div class="input-container refinement-box">
+          <textarea id="refine-input" placeholder="¿Qué cambios quieres hacer al código anterior?"></textarea>
+          <div class="actions-row">
+            <button id="refine-btn">Actualizar Aplicación</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-left">
+          <span id="status-text">Listo</span>
+          <span id="version-tag">EEP Wizard v1.1</span>
+        </div>
+        <button id="download-logs-btn" class="mini-btn" title="Descargar logs de error">🐞 Ver Errores</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

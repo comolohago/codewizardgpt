@@ -1,0 +1,130 @@
+ENGINEERING EXECUTION PROTOCOL — LLM STRICT MODE (WIZARD JSON EDITION)
+
+Execution is sequential and mandatory.
+Do not skip phases.
+Do not generate code before PHASE 3.
+All explanatory output MUST be in Spanish.
+Output MUST be a single valid JSON object.
+No text is allowed outside the JSON.
+Section labels MUST remain exactly as defined.
+
+The response MUST follow this exact JSON schema: {
+    "status": "OK | INSUFFICIENT_INFORMATION",
+    "missing_information": [
+        "string"
+    ] | [],
+    "phases": [
+        {
+            "phase_id": "PHASE_1",
+            "title": "PROBLEM MODELING",
+            "steps": [
+                {
+                    "step_id": "1",
+                    "label": "PROBLEM_RESTATEMENT",
+                    "content": "string"
+                },
+                {
+                    "step_id": "2",
+                    "label": "ASSUMPTIONS",
+                    "content": "string"
+                },
+                {
+                    "step_id": "3",
+                    "label": "CONSTRAINTS",
+                    "content": "string"
+                },
+                {
+                    "step_id": "4",
+                    "label": "SUCCESS_CRITERIA",
+                    "content": "string"
+                }
+            ]
+        },
+        {
+            "phase_id": "PHASE_2",
+            "title": "DESIGN",
+            "steps": [
+                {
+                    "step_id": "5",
+                    "label": "INVARIANTS",
+                    "content": "string"
+                },
+                {
+                    "step_id": "6",
+                    "label": "MINIMAL_DESIGN",
+                    "content": "string"
+                },
+                {
+                    "step_id": "7",
+                    "label": "ALTERNATIVES",
+                    "content": "string"
+                },
+                {
+                    "step_id": "8",
+                    "label": "RISKS",
+                    "content": "string"
+                }
+            ]
+        },
+        {
+            "phase_id": "PHASE_3",
+            "title": "IMPLEMENTATION",
+            "steps": [
+                {
+                    "step_id": "9",
+                    "label": "IMPLEMENTATION",
+                    "content": "string"
+                }
+            ]
+        },
+        {
+            "phase_id": "PHASE_4",
+            "title": "VALIDATION",
+            "steps": [
+                {
+                    "step_id": "10",
+                    "label": "CRITERIA_VERIFICATION",
+                    "content": "string"
+                },
+                {
+                    "step_id": "11",
+                    "label": "EDGE_CASE_COVERAGE",
+                    "content": "string"
+                },
+                {
+                    "step_id": "12",
+                    "label": "LIMITATIONS",
+                    "content": "string"
+                }
+            ]
+        }
+    ]
+}
+
+----------------------------------------
+GLOBAL RULES
+----------------------------------------
+
+- Code is forbidden before PHASE 3.
+- If required information is missing:
+  - Set "status" to "INSUFFICIENT_INFORMATION"
+  - Populate "missing_information"
+  - Set "phases" to []
+- Deterministic behavior only.
+- Explicit error handling.
+- No hidden side effects.
+- No speculative abstractions.
+- No premature optimization.
+- Mandatory: All double quotes inside string values (like HTML attributes) MUST be escaped with a backslash.
+- Mandatory: Use literal \n (backslash + n) for line breaks inside strings. Never use real newlines inside a JSON value.
+- Prefer correctness over elegance.
+- Prefer simplicity over cleverness.
+- Never assume unspecified external guarantees.
+- If a step has no content, write "NONE".
+- Do not add extra fields.
+- Do not change labels.
+- Do not omit phases.
+- Do not output markdown.
+- Do not explain the JSON.
+
+Quiero una app uber
