@@ -1,0 +1,192 @@
+[
+  {
+    "name": "Alice Johnson",
+    "sku": "10001",
+    "price": 19.99,
+    "shipTo": {
+      "name": "Bob Johnson",
+      "address": "742 Evergreen Terrace",
+      "city": "Springfield",
+      "state": "IL",
+      "zip": "62704"
+    },
+    "billTo": {
+      "name": "Alice Johnson",
+      "address": "742 Evergreen Terrace",
+      "city": "Springfield",
+      "state": "IL",
+      "zip": "62704"
+    }
+  },
+  {
+    "name": "Carlos Rivera",
+    "sku": "10002",
+    "price": 45.50,
+    "shipTo": {
+      "name": "Maria Rivera",
+      "address": "123 Ocean Drive",
+      "city": "Miami",
+      "state": "FL",
+      "zip": "33101"
+    },
+    "billTo": {
+      "name": "Carlos Rivera",
+      "address": "123 Ocean Drive",
+      "city": "Miami",
+      "state": "FL",
+      "zip": "33101"
+    }
+  },
+  {
+    "name": "Emily Davis",
+    "sku": "10003",
+    "price": 78.10,
+    "shipTo": {
+      "name": "Daniel Davis",
+      "address": "456 Pine Street",
+      "city": "Denver",
+      "state": "CO",
+      "zip": "80203"
+    },
+    "billTo": {
+      "name": "Emily Davis",
+      "address": "456 Pine Street",
+      "city": "Denver",
+      "state": "CO",
+      "zip": "80203"
+    }
+  },
+  {
+    "name": "Francis Lee",
+    "sku": "10004",
+    "price": 12.75,
+    "shipTo": {
+      "name": "Grace Lee",
+      "address": "89 Sunset Blvd",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90001"
+    },
+    "billTo": {
+      "name": "Francis Lee",
+      "address": "89 Sunset Blvd",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90001"
+    }
+  },
+  {
+    "name": "Hannah Kim",
+    "sku": "10005",
+    "price": 250.00,
+    "shipTo": {
+      "name": "Michael Kim",
+      "address": "321 Market Street",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94105"
+    },
+    "billTo": {
+      "name": "Hannah Kim",
+      "address": "321 Market Street",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94105"
+    }
+  },
+  {
+    "name": "Ivan Petrov",
+    "sku": "10006",
+    "price": 33.33,
+    "shipTo": {
+      "name": "Olga Petrova",
+      "address": "12 Red Square",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "billTo": {
+      "name": "Ivan Petrov",
+      "address": "12 Red Square",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+    }
+  },
+  {
+    "name": "Julia Martinez",
+    "sku": "10007",
+    "price": 99.99,
+    "shipTo": {
+      "name": "Andres Martinez",
+      "address": "987 Elm Street",
+      "city": "Austin",
+      "state": "TX",
+      "zip": "73301"
+    },
+    "billTo": {
+      "name": "Julia Martinez",
+      "address": "987 Elm Street",
+      "city": "Austin",
+      "state": "TX",
+      "zip": "73301"
+    }
+  },
+  {
+    "name": "Kevin Brown",
+    "sku": "10008",
+    "price": 5.49,
+    "shipTo": {
+      "name": "Laura Brown",
+      "address": "55 Lake View",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60601"
+    },
+    "billTo": {
+      "name": "Kevin Brown",
+      "address": "55 Lake View",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60601"
+    }
+  },
+  {
+    "name": "Natalie White",
+    "sku": "10009",
+    "price": 150.75,
+    "shipTo": {
+      "name": "Peter White",
+      "address": "101 River Road",
+      "city": "Boston",
+      "state": "MA",
+      "zip": "02108"
+    },
+    "billTo": {
+      "name": "Natalie White",
+      "address": "101 River Road",
+      "city": "Boston",
+      "state": "MA",
+      "zip": "02108"
+    }
+  },
+  {
+    "name": "Oscar Green",
+    "sku": "10010",
+    "price": 64.20,
+    "shipTo": {
+      "name": "Sofia Green",
+      "address": "222 Cedar Lane",
+      "city": "Seattle",
+      "state": "WA",
+      "zip": "98101"
+    },
+    "billTo": {
+      "name": "Oscar Green",
+      "address": "222 Cedar Lane",
+      "city": "Seattle",
+      "state": "WA",
+      "zip": "98101"
+    }
+  }
+]
